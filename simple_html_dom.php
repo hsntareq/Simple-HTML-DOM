@@ -1718,4 +1718,7 @@ class simple_html_dom
     function loadFile() {$args = func_get_args();$this->load_file($args);}
 }
 
+function pr($var){ echo '<pre>'; print_r($var);echo '</pre>'; }
+function ve($var){ echo '<pre>'; var_export($var);echo '</pre>'; }
+function url_to_file_name( $url ) {return str_replace( [ '/', ':', '.' ], '_', $url );}
 ?>
